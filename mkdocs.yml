@@ -1,0 +1,65 @@
+﻿site_name: deezify
+site_url: https://m38di.github.io/deezify/
+repo_url: https://github.com/m38di/deezify
+repo_name: m38di/deezify
+site_description: Complete typed Python SDK for the Deezer API — catalogue, search, charts, podcasts, OAuth, sync + async.
+site_author: m38di
+copyright: MIT — m38di. API data belongs to Deezer (developers.deezer.com).
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: true
+            show_root_heading: true
+            members_order: source
+
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - Authentication (OAuth): auth.md
+  - Rate limiting: rate-limit.md
+  - Enums: enums.md
+  - High-level helpers: high-level.md
+  - API reference:
+      - Client: api/client.md
+      - Resources: api/resources.md
+      - Types: api/types.md
+      - Enums: api/enums.md
+      - Errors: api/errors.md
+      - OAuth helpers: api/oauth.md
+      - Pagination: api/paginator.md
+  - Changelog: changelog.md
+

@@ -1,0 +1,4 @@
+﻿# Pagination
+
+::: deezify.paginator
+

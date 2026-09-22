@@ -1,0 +1,4 @@
+﻿# Errors
+
+::: deezify.errors
+
